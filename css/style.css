@@ -60,11 +60,11 @@ img {
 /* header */
 .header {
     letter-spacing: 0.02em;
+    border-bottom: 1px solid #ECECEC;
 }
 .header-container {
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #ECECEC ;
 }
 .nav {
     display: flex;
@@ -113,6 +113,8 @@ img {
     margin-left: auto;
 }
 .header-list .link {
+    display: flex;
+    align-items: center;
     color: var(--text-color);
     font-weight: 500;
     line-height: 1.1429;
@@ -125,6 +127,7 @@ img {
 /* --------------Студія------------- */
 /* hero */
 .hero {
+    max-width: 1600px;
     background-image: linear-gradient(
      rgba(47, 48, 58, 0.4),
      rgba(47, 48, 58, 0.4)
@@ -289,10 +292,12 @@ img {
 .icon-team {
     fill: #AFB1B8;
 }
-.team-soc-link:hover {
+.team-soc-link:hover,
+.team-soc-link:focus {
     background-color: #2196F3;
 }
-.team-soc-link:hover .icon-team{
+.team-soc-link:hover .icon-team,
+.team-soc-link:focus .icon-team{
     fill: #FFFFFF;
 }
 /* clients */
@@ -315,7 +320,7 @@ img {
     content: "";
     width: 170px;
     height: 92px;
-    background-color: var(--secondary-background);
+    background-color: #FFFFFF;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
     justify-content: center;
@@ -325,10 +330,12 @@ img {
 .icon-clients {
     fill: #AFB1B8;
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
     border-color: #2196F3;
 }
-.clients-link:hover .icon-clients {
+.clients-link:hover .icon-clients,
+.clients-link:focus .icon-clients {
     fill: #2196F3;
 }
 /* footer */
@@ -339,6 +346,7 @@ img {
 }
 .container.footer {
     display: flex;
+    align-items: baseline;
 }
 .footer-icon {
     margin-left: 70px;
@@ -377,12 +385,15 @@ img {
 .footer-list .link:focus {
     color: var(--hover-color);
 }
-.footer-title {
+.footer-text {
     color: #FFFFFF;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.1429;
     letter-spacing: 0.03em;
     margin-bottom: 20px;
+    margin-top: 0;
+    text-transform: uppercase;
 }
 .icon-footer-list {
     display: flex;
@@ -404,7 +415,8 @@ img {
 .icon-footer {
     fill: #FFFFFF;
 }
-.icon-soc-footer:hover {
+.icon-soc-footer:hover,
+.icon-soc-footer:focus {
     background-color: #2196F3;
 }
 
