@@ -17,6 +17,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./css/style.css" />
     <title>Студія</title>
   </head>
@@ -34,7 +35,7 @@
         </nav>
         <ul class="header-list">
           <li>
-            <a href="#" class="link" data-modal-open>
+            <a href="mail:info@devstudio.com" class="link">
               <svg class="icon-phone-envelope" width="16px" height="12px">
                 <use href="./imges/symbol-defs.svg#icon-envelope"></use>
               </svg>
@@ -55,8 +56,8 @@
     <!-- Унікальний контент сторінки -->
     <main>
       <section class="hero">
-        <div class="container">
-          <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
+        <div class="container" data-modal-open>
+          <h1 class="hero-title" data-aos="flip-right">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="hero-bn">Замовити послугу</button>
         </div>
       </section>
@@ -111,7 +112,7 @@
       </section>
       <section class="work">
         <div class="container">
-          <h2 class="work-title">Чим ми займаємося</h2>
+          <h2 class="work-title" data-aos="zoom-in-down">Чим ми займаємося</h2>
           <ul class="work-pic">
             <li class="work-item">
               <img src="./imges/box1.jpg" width="370" alt="людина яка набирає комп'ютерний код" />
@@ -130,7 +131,7 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2 class="team-title">Наша команда</h2>
+          <h2 class="team-title" data-aos="zoom-in-down">Наша команда</h2>
           <ul class="team-list">
             <li class="team-item">
               <img
@@ -301,43 +302,49 @@
       </section>
       <section class="clients">
         <div class="container">
-          <h2 class="clients-title">Постійні клієнти</h2>
+          <h2 class="clients-title" data-aos="zoom-in-down">Постійні клієнти</h2>
           <ul class="clients-list">
             <li>
               <a href="#" class="clients-link"
                 ><svg class="icon-clients" width="106px" height="60px">
-                  <use href="./imges/symbol-defs.svg#icon-yaco"></use></svg>
-                </a>
+                  <use href="./imges/symbol-defs.svg#icon-yaco"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a href="#" class="clients-link"
                 ><svg class="icon-clients" width="106px" height="60px">
-                  <use href="./imges/symbol-defs.svg#icon-tagline"></use></svg>
-                </a>
+                  <use href="./imges/symbol-defs.svg#icon-tagline"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a href="#" class="clients-link"
                 ><svg class="icon-clients" width="106px" height="60px">
-                  <use href="./imges/symbol-defs.svg#icon-company"></use></svg>
-                </a>
+                  <use href="./imges/symbol-defs.svg#icon-company"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a href="#" class="clients-link"
                 ><svg class="icon-clients" width="106px" height="60px">
-                  <use href="./imges/symbol-defs.svg#icon-foster"></use></svg>
-                </a>
+                  <use href="./imges/symbol-defs.svg#icon-foster"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a href="#" class="clients-link"
                 ><svg class="icon-clients" width="106px" height="60px">
-                  <use href="./imges/symbol-defs.svg#icon-brand"></use></svg>
-                </a>
+                  <use href="./imges/symbol-defs.svg#icon-brand"></use>
+                </svg>
+              </a>
             </li>
             <li>
               <a href="#" class="clients-link"
                 ><svg class="icon-clients" width="106px" height="60px">
-                  <use href="./imges/symbol-defs.svg#icon-company-tag"></use></svg>
-                </a>
+                  <use href="./imges/symbol-defs.svg#icon-company-tag"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -376,31 +383,39 @@
             <li class="icon-soc-item">
               <a class="icon-soc-footer" href="#"
                 ><svg class="icon-footer" width="20px" height="20px">
-                  <use href="./imges/symbol-defs.svg#icon-instagram"></use></svg>
-                </a>
+                  <use href="./imges/symbol-defs.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
             <li class="icon-soc-item">
               <a class="icon-soc-footer" href="#"
                 ><svg class="icon-footer" width="20px" height="20px">
-                  <use href="./imges/symbol-defs.svg#icon-Group"></use></svg>
-                </a>
+                  <use href="./imges/symbol-defs.svg#icon-Group"></use>
+                </svg>
+              </a>
             </li>
             <li class="icon-soc-item">
               <a class="icon-soc-footer" href="#"
                 ><svg class="icon-footer" width="20px" height="20px">
-                  <use href="./imges/symbol-defs.svg#icon-facebook"></use></svg>
-                </a>
+                  <use href="./imges/symbol-defs.svg#icon-facebook"></use>
+                </svg>
+              </a>
             </li>
             <li class="icon-soc-item">
               <a class="icon-soc-footer" href="#"
                 ><svg class="icon-footer" width="20px" height="20px">
-                  <use href="./imges/symbol-defs.svg#icon-linkedin"></use></svg>
+                  <use href="./imges/symbol-defs.svg#icon-linkedin"></use>
+                </svg>
               </a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-bn" data-modal-close>
@@ -410,7 +425,6 @@
         </button>
       </div>
     </div>
-    <script src="./js/modal.js">
-    </script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
